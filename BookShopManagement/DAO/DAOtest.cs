@@ -23,7 +23,7 @@ namespace BookShopManagement.DAO
             }
         }
 
-        public static void them()
+        public void them()
         {
             string sql = "INSERT INTO TacGia VALUES (N'TÁC GIẢ 2')";
             DAO.ConnectionSQL.Instance.Execute(sql);

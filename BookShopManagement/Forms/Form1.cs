@@ -63,7 +63,7 @@ namespace BookShopManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DAOtest.them();
+            DAOtest.Instance.them();
         }
     }
 }
