@@ -94,10 +94,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(60, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(304, 32);
+            this.label2.Size = new System.Drawing.Size(237, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Book Shop Manament";
-            
             // 
             // label1
             // 
@@ -107,7 +106,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(331, 342);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 23);
+            this.label1.Size = new System.Drawing.Size(98, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name:";
             // 
@@ -130,7 +129,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(508, 297);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 32);
+            this.label3.Size = new System.Drawing.Size(181, 25);
             this.label3.TabIndex = 1;
             this.label3.Text = "Please Login First";
             // 
@@ -140,7 +139,7 @@
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(335, 369);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(547, 37);
+            this.textBox1.Size = new System.Drawing.Size(547, 31);
             this.textBox1.TabIndex = 3;
             // 
             // label4
@@ -150,7 +149,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(331, 415);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 23);
+            this.label4.Size = new System.Drawing.Size(86, 21);
             this.label4.TabIndex = 1;
             this.label4.Text = "Password:";
             // 
@@ -160,7 +159,7 @@
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(335, 442);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(547, 37);
+            this.textBox2.Size = new System.Drawing.Size(547, 31);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -188,7 +187,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(509, 487);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 23);
+            this.label5.Size = new System.Drawing.Size(141, 19);
             this.label5.TabIndex = 1;
             this.label5.Text = "Forgot Password?";
             // 
@@ -200,7 +199,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label6.Location = new System.Drawing.Point(6, 696);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(483, 21);
+            this.label6.Size = new System.Drawing.Size(372, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "Copyrights © 2018. All rights Reserved By C# Ui Academy.";
             // 
@@ -218,6 +217,7 @@
             this.button3.Size = new System.Drawing.Size(74, 48);
             this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -240,6 +240,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

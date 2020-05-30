@@ -56,6 +56,8 @@
     <Compile Include="CustomControls\DragControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DAO\ConnectionSQL.cs" />
+    <Compile Include="DAO\DAOtest.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +99,12 @@
     </Compile>
     <Compile Include="Forms\Form_AddStock.Designer.cs">
       <DependentUpon>Form_AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ConnectionSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ConnectionSQL.Designer.cs">
+      <DependentUpon>Form_ConnectionSQL.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form_Dashboard.cs">
       <SubType>Form</SubType>
@@ -148,6 +156,7 @@
     <Compile Include="UserControls\UC_ViewSales.Designer.cs">
       <DependentUpon>UC_ViewSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_AddStock.resx">
       <DependentUpon>Form_AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ConnectionSQL.resx">
+      <DependentUpon>Form_ConnectionSQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form_Dashboard.resx">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
@@ -222,7 +234,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BLL\" />
-    <Folder Include="DAO\" />
     <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
