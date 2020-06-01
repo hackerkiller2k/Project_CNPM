@@ -32,12 +32,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.dragControl1 = new DragControlDemo.DragControl();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,12 +75,12 @@
             this.panel3.Size = new System.Drawing.Size(439, 10);
             this.panel3.TabIndex = 7;
             // 
-            // textBox2
+            // txtCategory
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 32);
-            this.textBox2.TabIndex = 17;
+            this.txtCategory.Location = new System.Drawing.Point(172, 95);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(207, 27);
+            this.txtCategory.TabIndex = 17;
             // 
             // label6
             // 
@@ -90,7 +89,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(28, 99);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 23);
+            this.label6.Size = new System.Drawing.Size(104, 19);
             this.label6.TabIndex = 15;
             this.label6.Text = "Tên Thể Loại:";
             // 
@@ -102,7 +101,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(146, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(194, 32);
+            this.label4.Size = new System.Drawing.Size(154, 25);
             this.label4.TabIndex = 16;
             this.label4.Text = "Thêm Thể Loại";
             // 
@@ -120,6 +119,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnClose
             // 
@@ -137,10 +137,6 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // dragControl1
-            // 
-            this.dragControl1.SelectControl = this;
-            // 
             // Form_AddCategory
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -148,7 +144,7 @@
             this.ClientSize = new System.Drawing.Size(439, 313);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
@@ -172,7 +168,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
